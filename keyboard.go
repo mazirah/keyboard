@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-//GetFloat takes a string from Stdin trims it and coverts it float64, then returns it
+//GetFloat reads a number from the keyboard. It returns the number and any error encountered
 func GetFloat() (float64, error) {
 	reader := bufio.NewReader(os.Stdin)
 	input, err := reader.ReadString('\n')
